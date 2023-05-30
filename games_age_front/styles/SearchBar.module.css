@@ -1,0 +1,11 @@
+.search_form {
+    @apply relative mx-auto w-max
+}
+
+.search_input {
+    @apply cursor-pointer relative z-10 h-12 w-12 text-secondary-red font-semibold rounded-full border border-secondary-red bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-secondary-red focus:pl-16 focus:pr-4 
+}
+
+.search_icon {
+    @apply absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-secondary-red px-3.5 peer-focus:border-secondary-red peer-focus:stroke-secondary-red fill-none
+}

@@ -1,0 +1,11 @@
+.nav_bar {
+  @apply relative flex justify-between items-center w-full shadow-xl p-3 bg-primary-red
+}
+
+.logo_link {
+  @apply flex gap-2
+}
+
+.nav_img {
+  @apply object-contain rounded-full
+}
