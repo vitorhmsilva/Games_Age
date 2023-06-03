@@ -12,10 +12,16 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
       },
       colors: {
-        'primary-red': '#410000',
-        'secondary-red': '#AA0000'
-      }
+        'primary-red': '#2c2c2c',
+        'secondary-red': '#AA0000',
+        'primary-black': '#08020e',
+        'secondary-black': '#08020e',
+        'secondary-outline': '#2c2c2c',
+      },
+      backgroundImage: {
+        space: "url('/public/assets/background.jpg')",
+      },
     },
   },
   plugins: [],
-}
+};
