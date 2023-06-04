@@ -1,19 +1,29 @@
 package br.com.gamesage.dtos;
 
+import br.com.gamesage.entities.Progresso;
 import lombok.Data;
 
 @Data
 public class ProgressoDTO {
 
-    private Float progresso;
+    private Integer progresso;
     private Integer conquistas;
     private JogoDTO jogo;
 
-    public Float getProgresso() {
+    public ProgressoDTO() {
+    }
+
+    public ProgressoDTO(Progresso progresso) {
+        this.progresso = progresso.getProgresso();
+        this.conquistas = progresso.getConquistas();
+        this.jogo = new JogoDTO(progresso.getJogo());
+    }
+
+    public Integer getProgresso() {
         return progresso;
     }
 
-    public void setProgresso(Float progresso) {
+    public void setProgresso(Integer progresso) {
         this.progresso = progresso;
     }
 
