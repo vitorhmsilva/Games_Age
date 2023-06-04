@@ -1,11 +1,14 @@
 .nav_bar {
-  @apply relative flex justify-between items-center w-full shadow-xl p-3 bg-primary-red
+  @apply relative flex justify-between items-center w-full shadow-xl p-3 bg-secondary-black h-32;
+
+  background: rgba(209, 200, 200, 0.229);
+  backdrop-filter: blur(10px);
 }
 
 .logo_link {
-  @apply flex gap-2
+  @apply flex gap-2;
 }
 
 .nav_img {
-  @apply object-contain rounded-full
+  @apply object-contain rounded-full;
 }
