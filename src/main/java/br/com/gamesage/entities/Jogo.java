@@ -18,8 +18,8 @@ public class Jogo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_jogo")
     private Long idJogo;
-    @Column(name = "nome")
-    private String nome;
+    @Column(name = "nome_jogo")
+    private String nomeJogo;
     @Column(name = "descricao")
     private String descricao;
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.jogo")
@@ -38,11 +38,11 @@ public class Jogo {
     }
 
     public String getNome() {
-        return nome;
+        return nomeJogo;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String nomeJogo) {
+        this.nomeJogo = nomeJogo;
     }
 
     public String getDescricao() {

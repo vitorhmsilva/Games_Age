@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 @Entity
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "pk", scope = Progresso.class)
@@ -17,9 +19,11 @@ public class Progresso {
     @EmbeddedId
     private ProgressoId pk = new ProgressoId();
     @Column(name = "progresso")
-    private Float progresso;
+    private Integer progresso;
     @Column(name = "conquistas")
     private Integer conquistas;
+    @Column(name = "plataforma")
+    private Integer plataforma;
 
     public ProgressoId getPk() {
         return pk;
@@ -29,11 +33,11 @@ public class Progresso {
         this.pk = pk;
     }
 
-    public Float getProgresso() {
+    public Integer getProgresso() {
         return progresso;
     }
 
-    public void setProgresso(Float progresso) {
+    public void setProgresso(Integer progresso) {
         this.progresso = progresso;
     }
 
@@ -61,5 +65,13 @@ public class Progresso {
 
     public void setJogo(Jogo jogo) {
         getPk().setJogo(jogo);
+    }
+
+    public Integer getPlataforma() {
+        return plataforma;
+    }
+
+    public void setPlataforma(Integer plataforma) {
+        this.plataforma = plataforma;
     }
 }
