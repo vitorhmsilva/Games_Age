@@ -1,37 +1,103 @@
 .card_body {
   width: 100%;
   height: 200px;
-  background: rgba(229, 229, 229, 0.324);
+  background: rgba(41, 11, 55, 0.324);
   border-radius: 10px;
   backdrop-filter: blur(20px);
 
   margin-bottom: 20px;
 
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 0.6fr 1.4fr 1fr 1fr 1fr;
+  grid-template-rows: 1.3fr 0.7fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     'logoContainer nameContainer nameContainer nameContainer buttonsContainer'
-    'plataformsContainer progressContainer progressContainer progressContainer achivmentsContainer';
+    'platformsContainer progressContainer progressContainer progressContainer achievementsContainer';
 }
 .logoContainer {
   grid-area: logoContainer;
-  background: rgb(13, 222, 69);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoContainer > div {
+  background-image: url('https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg');
+  background-size: cover;
+  background-position: center;
+
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
 }
 .nameContainer {
   grid-area: nameContainer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e8e0e0;
 }
 .buttonsContainer {
   grid-area: buttonsContainer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
 }
-.plataformsContainer {
-  grid-area: plataformsContainer;
+.platformsContainer {
+  grid-area: platformsContainer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.platformsContainer > * {
+  margin-bottom: 20px;
 }
 .progressContainer {
   grid-area: progressContainer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
-.achivmentsContainer {
-  grid-area: achivmentsContainer;
+.progressContainer > h1 {
+  font-size: 1.5rem;
+  color: #e8e0e0;
+}
+.achievementsContainer {
+  grid-area: achievementsContainer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.achievementsContainer > h1 {
+  font-size: 1.5rem;
+  color: #e8e0e0;
+}
+.achievementsContainer > div > p {
+  font-size: 1.3rem;
+  color: #e8e0e0;
+  margin-right: 10px;
+}
+.achievementsContainer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }

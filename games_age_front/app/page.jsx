@@ -4,25 +4,60 @@ import styles from '@styles/Home.module.css';
 const Home = () => {
   const items = [
     {
-      gameImage: 'https://i.imgur.com/1QxXQ2H.png',
+      gameImage:
+        'https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg',
       gameName: 'The Legend of Zelda: Breath of the Wild',
-      platform: ['Nintendo Switch', 'Wii U'],
-      progress: '100%',
+      platform: [4],
+      progress: 100,
       achievements: '120/120',
     },
     {
-      gameImage: 'https://i.imgur.com/1QxXQ2H.png',
+      gameImage:
+        'https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg',
       gameName: 'God of War Ragnarok',
-      platform: ['PlayStation 5'],
-      progress: '100%',
-      achievements: '120/120',
+      platform: [2],
+      progress: 70,
+      achievements: '82/120',
     },
     {
-      gameImage: 'https://i.imgur.com/1QxXQ2H.png',
+      gameImage:
+        'https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg',
       gameName: 'Counter Strike: Global Offensive',
-      platform: ['PC'],
-      progress: '100%',
-      achievements: '120/120',
+      platform: [1],
+      progress: 30,
+      achievements: '5/120',
+    },
+    {
+      gameImage:
+        'https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg',
+      gameName: 'Counter Strike: Global Offensive',
+      platform: [1],
+      progress: 30,
+      achievements: '5/120',
+    },
+    {
+      gameImage:
+        'https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg',
+      gameName: 'Counter Strike: Global Offensive',
+      platform: [1],
+      progress: 30,
+      achievements: '5/120',
+    },
+    {
+      gameImage:
+        'https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg',
+      gameName: 'Counter Strike: Global Offensive',
+      platform: [1],
+      progress: 30,
+      achievements: '5/120',
+    },
+    {
+      gameImage:
+        'https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg',
+      gameName: 'Counter Strike: Global Offensive',
+      platform: [1],
+      progress: 30,
+      achievements: '5/120',
     },
   ];
 
