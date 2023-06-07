@@ -2,7 +2,7 @@
 
 import styles from '@styles/Card.module.css';
 import { GetPlatform } from '@components/GetPlatform';
-import { ProgressBar } from './ProgressBar';
+import { ProgressBar } from '@components/ProgressBar';
 import { BiTrophy } from 'react-icons/bi';
 import { LuEdit2 } from 'react-icons/lu';
 import { AiOutlineDelete } from 'react-icons/ai';

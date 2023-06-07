@@ -8,6 +8,7 @@ public class ProgressoDTO {
 
     private Integer progresso;
     private Integer conquistas;
+    private Integer plataforma;
     private JogoDTO jogo;
 
     public ProgressoDTO() {
@@ -16,6 +17,7 @@ public class ProgressoDTO {
     public ProgressoDTO(Progresso progresso) {
         this.progresso = progresso.getProgresso();
         this.conquistas = progresso.getConquistas();
+        this.plataforma = progresso.getPlataforma();
         this.jogo = new JogoDTO(progresso.getJogo());
     }
 
@@ -33,6 +35,14 @@ public class ProgressoDTO {
 
     public void setConquistas(Integer conquistas) {
         this.conquistas = conquistas;
+    }
+
+    public Integer getPlataforma() {
+        return plataforma;
+    }
+
+    public void setPlataforma(Integer plataforma) {
+        this.plataforma = plataforma;
     }
 
     public JogoDTO getJogo() {

@@ -1,0 +1,26 @@
+.cardRanking_body {
+  @apply relative flex items-center p-2;
+  width: 100%;
+  height: 80px;
+  background: rgba(41, 11, 55, 0.324);
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  margin: 15px 0px;
+
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card_img {
+  @apply object-contain rounded-full ;
+}
+
+.nameContainer {
+    @apply flex-auto justify-start pl-2 text-2xl font-bold text-text-color-white basis-1/3;
+}
+
+.conquistas_numero {
+    @apply text-center text-text-color-white font-bold text-lg;
+
+}

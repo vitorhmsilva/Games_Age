@@ -17,6 +17,8 @@ module.exports = {
         'primary-black': '#08020e',
         'secondary-black': '#08020e',
         'secondary-outline': '#2c2c2c',
+        'card-bg': '#290b3753',
+        'text-color-white': '#e8e0e0',
       },
       backgroundImage: {
         space: "url('/public/assets/background.jpg')",

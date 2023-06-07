@@ -1,4 +1,5 @@
 import Card from '@components/Card';
+import Ranking from '@components/Ranking';
 import styles from '@styles/Home.module.css';
 
 const Home = () => {
@@ -69,7 +70,9 @@ const Home = () => {
             <Card key={index} {...item} />
           ))}
         </div>
-        <div className="rank-container">Ranks</div>
+        <div className={styles.rankContainer}>
+          <Ranking />
+        </div>
       </div>
     </section>
   );
