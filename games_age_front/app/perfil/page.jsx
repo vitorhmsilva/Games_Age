@@ -1,5 +1,6 @@
-import styles from '@styles/Perfil.module.css'
-import Image from 'next/image'
+import Input from '@components/Input';
+import styles from '@styles/Perfil.module.css';
+import Image from 'next/image';
 
 const page = () => {
   return (
@@ -21,24 +22,18 @@ const page = () => {
         </div>
       </div>
       <div className={styles.formsContainer}>
-        <div className={styles.mudarSenhaContainer}>
-          <input type='password' name='senhaAntiga' />
-          <input type='password' name='senhaNova' />
-          <input type='password' name='repetirSenhaNova' />
-        </div>
-        <div className={styles.adcProgressoContainer}>
-          <input type='password' name='senhaAntiga' />
-          <input type='password' name='senhaNova' />
-          <input type='password' name='repetirSenhaNova' />
-        </div>
-        <div className={styles.deletarUsuarioContainer}>
-          <input type='password' name='senhaAntiga' />
-          <input type='password' name='senhaNova' />
-          <input type='password' name='repetirSenhaNova' />
+        <div>
+          <p className={styles.title}>Mudar Senha</p>
+
+          <Input />
+          <Input />
+          <Input />
+
+          <button className={styles.button}>Mudar Senha</button>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

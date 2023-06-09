@@ -23,17 +23,26 @@
 }
 
 .formsContainer {
-  @apply grid-flow-col grid-cols-3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
+.formsContainer > div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .mudarSenhaContainer {
-  @apply col-span-1 bg-red-950
 }
 
 .adcProgressoContainer {
-    @apply col-span-1 bg-blue-950
+  @apply col-span-1 bg-blue-950;
 }
 
 .deletarUsuarioContainer {
-    @apply col-span-1 bg-green-950
+  @apply col-span-1 bg-green-950;
 }
