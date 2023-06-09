@@ -1,0 +1,39 @@
+.container {
+  @apply bg-card-bg rounded-xl backdrop-blur-xl m-5 h-5/6 p-5 flex flex-col gap-3;
+}
+
+.infoContainer {
+  @apply flex gap-3;
+}
+
+.imageContainer {
+  @apply object-contain rounded-full flex-initial;
+}
+
+.nameContainer {
+  @apply flex-1 justify-start pl-2 h-44 bg-card-bg rounded-xl backdrop-blur-xl p-5 inline-block;
+}
+
+.nomeBody {
+  @apply text-6xl font-bold text-text-color-white;
+}
+
+.subBody {
+  @apply text-3xl font-bold text-text-color-white;
+}
+
+.formsContainer {
+  @apply grid-flow-col grid-cols-3;
+}
+
+.mudarSenhaContainer {
+  @apply col-span-1 bg-red-950
+}
+
+.adcProgressoContainer {
+    @apply col-span-1 bg-blue-950
+}
+
+.deletarUsuarioContainer {
+    @apply col-span-1 bg-green-950
+}
