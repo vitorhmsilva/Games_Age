@@ -1,38 +1,86 @@
 'use client';
 
-import styles from '@styles/Home.module.css';
+import styles from '@styles/Usuario.module.css';
 import Card from '@components/Card';
-import Ranking from '@components/Ranking';
-import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import api from '@utils/api';
+import Profile from '@components/Profile';
 
-const Usuario = () => {
-  const searchParams = useSearchParams();
+const Usuario = ({ nickname }) => {
+  const items = [
+    {
+      gameImage:
+        'https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg',
+      gameName: 'The Legend of Zelda: Breath of the Wild',
+      platform: [4],
+      progress: 100,
+      achievements: '120/120',
+    },
+    {
+      gameImage:
+        'https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg',
+      gameName: 'God of War Ragnarok',
+      platform: [2],
+      progress: 70,
+      achievements: '82/120',
+    },
+    {
+      gameImage:
+        'https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg',
+      gameName: 'Counter Strike: Global Offensive',
+      platform: [1],
+      progress: 30,
+      achievements: '5/120',
+    },
+    {
+      gameImage:
+        'https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg',
+      gameName: 'Counter Strike: Global Offensive',
+      platform: [1],
+      progress: 30,
+      achievements: '5/120',
+    },
+    {
+      gameImage:
+        'https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg',
+      gameName: 'Counter Strike: Global Offensive',
+      platform: [1],
+      progress: 30,
+      achievements: '5/120',
+    },
+    {
+      gameImage:
+        'https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg',
+      gameName: 'Counter Strike: Global Offensive',
+      platform: [1],
+      progress: 30,
+      achievements: '5/120',
+    },
+    {
+      gameImage:
+        'https://cdn.discordapp.com/attachments/717471853786169425/1114743477381640192/sim.jpg',
+      gameName: 'Counter Strike: Global Offensive',
+      platform: [1],
+      progress: 30,
+      achievements: '5/120',
+    },
+  ];
 
-  const search = searchParams.get('nickname');
-  const [progressos, setProgressos] = useState([]);
-  useEffect(() => {
-    api.get('/progressos?nickname=' + search)
-  });
-  
-  fetch('http://localhost:8080/progressos?nickname=' + search)
+  /*useEffect(() => {
+    api.get('/progressos', {params: {nickname: 'xxvitinhopkbxx'}})
     .then((response) => {
-      setProgressos(response.json());
-      console.log(response.json());
+      console.log(response.data);
     });
+  });*/
 
   return (
     <section className="relative">
       <div className={styles.container}>
         <div className={styles.cardsContainer}>
-          {progressos?.map((progresso, index) => (
-            <Card key={index} {...progresso} />
+          {items?.map((item, index) => (
+            <Card key={index} {...item} />
           ))}
         </div>
-        <div className={styles.rankContainer}>
-          <h1>{progressos}</h1>
-          <Ranking />
+        <div className={styles.profileContainer}>
+          <Profile />
         </div>
       </div>
     </section>
