@@ -1,6 +1,10 @@
+'use client'
+
 import Card from '@components/Card';
 import Ranking from '@components/Ranking';
 import styles from '@styles/Home.module.css';
+import api from '@utils/api';
+import { useEffect, useState } from 'react';
 
 const Home = () => {
   const items = [
@@ -61,7 +65,7 @@ const Home = () => {
       achievements: '5/120',
     },
   ];
-
+  
   return (
     <section className="relative">
       <div className={styles.container}>

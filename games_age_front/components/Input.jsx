@@ -1,11 +1,16 @@
 import styles from '@styles/Input.module.css';
 import { AiFillEyeInvisible } from 'react-icons/ai';
 
-const Input = () => {
+const Input = ({ placeholder, showIcon, type }) => {
   return (
     <div className={styles.inputContainer}>
-      <input type="text" placeholder="Banana" />
-      <AiFillEyeInvisible className={styles.inputContainerIcon} />
+      <input type={type} placeholder={placeholder} />
+      {showIcon ? (
+        <AiFillEyeInvisible className={styles.inputContainerIcon} />
+      ) : (
+        <></>
+      )
+      }
     </div>
   );
 };

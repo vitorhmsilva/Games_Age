@@ -1,8 +1,8 @@
 .container {
-    @apply flex justify-center p-10
+    @apply flex justify-center pl-10 pb-10 pr-10
 }
 
-.loginContainer {
+.cadastroContainer {
     @apply w-1/3 h-auto bg-card-bg rounded-xl backdrop-blur-xl flex justify-between p-4 flex-col
 }
 
@@ -11,9 +11,9 @@
 }
 
 .inputContainer {
-    @apply flex flex-col gap-8 items-center
+    @apply flex flex-col items-center
 }
 
-.textoCadastrar {
+.textoEntrar {
     @apply flex gap-1 justify-end text-white
 }
